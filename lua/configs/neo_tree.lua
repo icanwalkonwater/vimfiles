@@ -1,4 +1,8 @@
 require('neo-tree').setup({
+  source_selector = {
+    winbar = true,
+    statusline = true,
+  },
   filesystem = {
     filtered_items = {
       visible = false,
@@ -9,5 +13,6 @@ require('neo-tree').setup({
   },
 })
 
-vim.keymap.set('n', '<C-n>', '<cmd>Neotree filesystem toggle<CR>', { desc = 'Toggle file tree' })
-vim.keymap.set('n', '<leader>n', '<cmd>Neotree focus<CR>', { desc = 'Focus file tree' })
+vim.keymap.set('n', '<C-n>', '<cmd>Neotree source=filesystem toggle<CR>', { desc = 'Toggle file tree' })
+vim.keymap.set('n', '<leader>n', '<cmd>Neotree source=filesystem action=focus reveal<CR>',
+  { desc = 'Focus file in file tree' })
