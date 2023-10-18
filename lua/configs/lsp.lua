@@ -77,6 +77,8 @@ local servers = {
   rust_analyzer = {},
   pylsp = {},
   clangd = {},
+  -- taplo = {}, -- toml
+  -- yamlls = {},
 }
 
 -- Setup neovim lua configuration

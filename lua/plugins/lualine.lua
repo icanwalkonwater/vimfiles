@@ -7,8 +7,7 @@ return {
       icons_enabled = false,
       theme = 'catppuccin-mocha',
       component_separators = '|',
-      section_separators = '',
+      section_separators = { left = '', right = '' },
     },
   },
 }
-

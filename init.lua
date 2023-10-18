@@ -19,20 +19,8 @@ require('keymap')
 -- [[ Highlight on yank ]]
 require('highlight_on_yank')
 
--- [[ Configure Telescope ]]
-require('configs.telescope')
-
--- [[ Configure Treesitter ]]
-require('configs.treesitter')
-
--- [[ Configure LSP ]]
+-- [[ Setup LSPs ]]
 require('configs.lsp')
-
--- [[ Configure nvim-cmp ]]
-require('configs.cmp')
-
--- [[ Configure neo-tree ]]
-require('configs.neo_tree')
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
