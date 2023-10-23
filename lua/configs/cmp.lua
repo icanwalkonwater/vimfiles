@@ -1,10 +1,13 @@
 -- See `:help cmp`
-local cmp = require 'cmp'
-local luasnip = require 'luasnip'
+local luasnip = require('luasnip')
 require('luasnip.loaders.from_vscode').lazy_load()
-luasnip.config.setup {}
+luasnip.config.setup({})
 
-cmp.setup {
+local cmp = require('cmp')
+cmp.setup({
+  completion = {
+    completeopt = "menu,menuone",
+  },
   snippet = {
     expand = function(args)
       luasnip.lsp_expand(args.body)
@@ -42,5 +45,6 @@ cmp.setup {
   sources = {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
+    { name = 'path' },
   },
-}
+})
