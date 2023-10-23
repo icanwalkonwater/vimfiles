@@ -74,7 +74,7 @@ local servers = {
     },
   },
 
-  rust_analyzer = {},
+  -- rust_analyzer = {}, -- setup by rust_tools
   pylsp = {},
   clangd = {},
   -- taplo = {}, -- toml
