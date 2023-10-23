@@ -39,4 +39,4 @@ vim.o.completeopt = 'menuone,noselect'
 vim.o.termguicolors = true
 
 -- Set colorcolumn
-vim.o.colorcolumn = '+100'
+vim.o.colorcolumn = '+80'

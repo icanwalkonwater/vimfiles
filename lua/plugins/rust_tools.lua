@@ -4,6 +4,10 @@ return {
     'neovim/nvim-lspconfig',
   },
   config = function()
-    require('rust-tools').setup({})
+    require('rust-tools').setup({
+      server = {
+        on_attach = require('configs.lsp').on_attach,
+      },
+    })
   end
 }
