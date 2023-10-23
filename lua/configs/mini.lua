@@ -2,7 +2,7 @@ require('mini.cursorword').setup({})
 require('mini.move').setup({})
 require('mini.pairs').setup({
   mappings = {
-    ["'"] = { action = 'closeopen', pair = "''", neigh_pattern = '[^\\<].', register = { cr = false } }
+    ["'"] = { action = 'closeopen', pair = "''", neigh_pattern = '[^\\<&].', register = { cr = false } }
   }
 })
 require('mini.trailspace').setup({})
