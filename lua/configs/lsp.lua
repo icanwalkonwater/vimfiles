@@ -69,7 +69,10 @@ require('mason-lspconfig').setup()
 local servers = {
   lua_ls = {
     Lua = {
-      workspace = { checkThirdParty = false },
+      workspace = {
+        checkThirdParty = true,
+        userThirdParty = { vim.fn.expand("$HOME/.config/nvim/luals_addons") },
+      },
       telemetry = { enable = false },
     },
   },

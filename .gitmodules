@@ -1,0 +1,3 @@
+[submodule "luals_addons/xmake-luals-addon"]
+	path = luals_addons/xmake-luals-addon
+	url = git@github.com:LelouchHe/xmake-luals-addon.git
