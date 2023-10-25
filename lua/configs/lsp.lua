@@ -82,6 +82,7 @@ local servers = {
   clangd = {},
   -- taplo = {}, -- toml
   -- yamlls = {},
+  cmake = {},
 }
 
 -- Setup neovim lua configuration
