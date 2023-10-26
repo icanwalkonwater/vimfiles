@@ -40,3 +40,7 @@ vim.o.termguicolors = true
 
 -- Set colorcolumn
 vim.o.colorcolumn = '+80'
+
+-- Set spellcheck
+vim.o.spell = true
+vim.o.spelllang = 'en'
