@@ -84,7 +84,14 @@ local servers = {
   -- yamlls = {},
   cmake = {},
   ansiblels = {},
-  nil_ls = {},
+  nil_ls = {
+    ["nil"] = {
+      formatting = { command = { "nixpkgs-fmt" }, },
+      flake = {
+        autoEvalInputs = true,
+      },
+    },
+  },
 }
 
 -- Setup neovim lua configuration
