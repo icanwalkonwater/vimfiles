@@ -86,7 +86,7 @@ local servers = {
   ansiblels = {},
   nil_ls = {
     ["nil"] = {
-      formatting = { command = { "nixpkgs-fmt" }, },
+      formatting = { command = { "alejandra" }, },
       flake = {
         autoEvalInputs = true,
       },
