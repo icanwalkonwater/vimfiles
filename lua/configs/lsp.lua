@@ -76,7 +76,6 @@ local servers = {
       telemetry = { enable = false },
     },
   },
-
   -- rust_analyzer = {}, -- setup by rust_tools
   pylsp = {},
   clangd = {},
@@ -92,6 +91,7 @@ local servers = {
       },
     },
   },
+  groovyls = {},
 }
 
 -- Setup neovim lua configuration
