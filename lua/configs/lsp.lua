@@ -92,6 +92,7 @@ local servers = {
     },
   },
   groovyls = {},
+  bashls = {},
 }
 
 -- Setup neovim lua configuration
