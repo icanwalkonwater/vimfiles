@@ -91,7 +91,7 @@ local servers = {
       },
     },
   },
-  groovyls = {},
+  -- groovyls = {},
   bashls = {},
   tsserver = {},
   astro = {},
