@@ -93,6 +93,7 @@ local servers = {
   },
   groovyls = {},
   bashls = {},
+  tsserver = {},
   astro = {},
 }
 

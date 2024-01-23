@@ -1,6 +1,6 @@
 return {
   'goolord/alpha-nvim',
-  depedencies = {
+  dependencies = {
     'nvim-tree/nvim-web-devicons',
   },
   config = function()
