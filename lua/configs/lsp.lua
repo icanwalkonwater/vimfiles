@@ -77,7 +77,7 @@ local servers = {
     },
   },
   -- rust_analyzer = {}, -- setup by rust_tools
-  pylsp = {},
+  pyright = {},
   clangd = {},
   -- taplo = {}, -- toml
   -- yamlls = {},
