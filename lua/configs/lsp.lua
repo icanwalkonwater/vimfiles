@@ -95,6 +95,7 @@ local servers = {
   bashls = {},
   tsserver = {},
   astro = {},
+  yamlls = {},
 }
 
 -- Setup neovim lua configuration
