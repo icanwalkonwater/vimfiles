@@ -694,8 +694,7 @@ require('lazy').setup({
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`ts_ls`) will work just fine
-        -- ts_ls = {},
-        --
+        ts_ls = {},
 
         lua_ls = {
           -- cmd = { ... },
@@ -715,7 +714,7 @@ require('lazy').setup({
 
       -- To avoid conflicts with mason's installation process and locally installed LSPs, we exclude some servers from being handled by mason.
       local mason_managed_servers = { 'lua_ls' }
-      local manually_managed_servers = { 'clangd', 'pyright', 'rust_analyzer' }
+      local manually_managed_servers = { 'clangd', 'pyright', 'rust_analyzer', 'ts_ls' }
 
       -- Ensure the servers and tools above are installed
       --
