@@ -648,6 +648,8 @@ require('lazy').setup({
           },
         },
 
+        bashls = {},
+
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -675,6 +677,7 @@ require('lazy').setup({
         'rust_analyzer',
         'ts_ls',
         'nil_ls',
+        'bashls',
       }
 
       -- Ensure the servers and tools above are installed
