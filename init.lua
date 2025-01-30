@@ -720,8 +720,17 @@ require('lazy').setup({
       }
 
       -- To avoid conflicts with mason's installation process and locally installed LSPs, we exclude some servers from being handled by mason.
-      local mason_managed_servers = { 'lua_ls' }
-      local manually_managed_servers = { 'clangd', 'pyright', 'rust_analyzer', 'ts_ls', 'nil_ls' }
+      -- NOTE: LSPCONFIG MASON
+      local mason_managed_servers = {
+        'lua_ls',
+      }
+      local manually_managed_servers = {
+        'clangd',
+        'pyright',
+        'rust_analyzer',
+        'ts_ls',
+        'nil_ls',
+      }
 
       -- Ensure the servers and tools above are installed
       --
