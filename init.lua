@@ -696,6 +696,13 @@ require('lazy').setup({
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         ts_ls = {},
 
+        nil_ls = {
+          ['nil'] = {
+            formatting = { command = { 'alejandra' } },
+            flake = { autoEvalInputs = true },
+          },
+        },
+
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -714,7 +721,7 @@ require('lazy').setup({
 
       -- To avoid conflicts with mason's installation process and locally installed LSPs, we exclude some servers from being handled by mason.
       local mason_managed_servers = { 'lua_ls' }
-      local manually_managed_servers = { 'clangd', 'pyright', 'rust_analyzer', 'ts_ls' }
+      local manually_managed_servers = { 'clangd', 'pyright', 'rust_analyzer', 'ts_ls', 'nil_ls' }
 
       -- Ensure the servers and tools above are installed
       --
