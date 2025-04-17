@@ -666,6 +666,8 @@ require('lazy').setup({
             },
           },
         },
+
+        jsonnet_ls = {},
       }
 
       -- To avoid conflicts with mason's installation process and locally installed LSPs, we exclude some servers from being handled by mason.
@@ -681,6 +683,7 @@ require('lazy').setup({
         'nil_ls',
         'bashls',
         'slangd',
+        'jsonnet_ls',
       }
 
       -- Ensure the servers and tools above are installed
