@@ -931,12 +931,7 @@ require('lazy').setup({
     name = 'catppuccin',
     priority = 1000, -- Make sure to load this before all the other start plugins.
     opts = {
-      color_overrides = {
-        all = {
-          -- Use a solid black background
-          base = '#000000',
-        },
-      },
+      transparent_background = true,
     },
     init = function()
       -- Load the colorscheme here.
