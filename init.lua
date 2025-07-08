@@ -695,17 +695,16 @@ require('lazy').setup({
         --
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         ts_ls = {},
-
         nil_ls = {
           ['nil'] = {
             formatting = { command = { 'alejandra' } },
             flake = { autoEvalInputs = true },
           },
         },
-
         bashls = {},
-
         slangd = {},
+        jsonnet_ls = {},
+        qmlls = {},
 
         lua_ls = {
           -- cmd = { ... },
@@ -721,8 +720,6 @@ require('lazy').setup({
             },
           },
         },
-
-        jsonnet_ls = {},
       }
 
       -- To avoid conflicts with mason's installation process and locally installed LSPs, we exclude some servers from being handled by mason.
@@ -739,6 +736,7 @@ require('lazy').setup({
         'bashls',
         'slangd',
         'jsonnet_ls',
+        'qmlls',
       }
 
       -- Ensure the servers and tools above are installed
