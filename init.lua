@@ -210,6 +210,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 vim.keymap.set('n', '<Tab>', '<Cmd>bn<CR>', { desc = 'Move to next buffer' })
 vim.keymap.set('n', '<S-Tab>', '<Cmd>bp<CR>', { desc = 'Move to previous buffer' })
 vim.keymap.set('n', '<leader>x', '<Cmd>bd<CR>', { desc = 'Delete current buffer' })
+vim.keymap.set('ca', 'BufCloseOthers', '%bd|e#', { desc = 'Close all buffers but current' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
