@@ -703,6 +703,7 @@ require('lazy').setup({
         },
         bashls = {},
         nushell = {},
+        cmake = {},
 
         slangd = {},
         jsonnet_ls = {},
@@ -737,6 +738,7 @@ require('lazy').setup({
         'nil_ls',
         'bashls',
         'nushell',
+        'cmake',
         'slangd',
         'jsonnet_ls',
         'qmlls',
