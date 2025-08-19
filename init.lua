@@ -1011,6 +1011,10 @@ require('lazy').setup({
       local mini_map = require 'mini.map'
       mini_map.setup()
       mini_map.open()
+
+      vim.keymap.set('n', '<leader>tm', function()
+        mini_map.toggle()
+      end, { desc = '[T]oggle [M]inimap' })
     end,
   },
   { -- Highlight, edit, and navigate code
