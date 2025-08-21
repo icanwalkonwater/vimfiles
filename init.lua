@@ -994,7 +994,20 @@ require('lazy').setup({
       --  Check out: https://github.com/echasnovski/mini.nvim
 
       -- Pick a random neovim ascii logo.
-      local starter_header = require('ascii').get_random('text', 'neovim')
+      local ascii_nvim = require('ascii').art.text.neovim
+      local cool_headers = {
+        ascii_nvim.default1,
+        ascii_nvim.dos_rebel,
+        ascii_nvim.ogre,
+        ascii_nvim.ansi_shadow,
+        ascii_nvim.bloody,
+        ascii_nvim.delta_corps_priest1,
+        ascii_nvim.elite,
+        ascii_nvim.the_edge,
+        ascii_nvim.larry_3d,
+        ascii_nvim.sharp,
+      }
+      local starter_header = cool_headers[math.random(#cool_headers)]
 
       -- Simple starter page with header and recent files.
       require('mini.starter').setup {
